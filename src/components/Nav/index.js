@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-const Nav = () => {
+const Navigation = () => {
     return(
         <nav>
-            <h1>Nav</h1>
+            <ul className="flex-row">
+            <li className="mx-2"><span>About</span></li>
+            <li className="mx-2"><span>Portfolio</span></li>
+            
+            <li className="mx-2"><span>Contact</span></li>
+            <li className="mx-2"><span>Resume</span></li>
+            </ul>
         </nav>
     );
-
 };
 
-export default Nav;
+export default Navigation;

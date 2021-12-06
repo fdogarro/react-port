@@ -1,11 +1,13 @@
 import React from 'react';
+import Nav from '../Nav'
 
 const Header = () => {
     return(
         <header>
             <a data-testid="link" href="/">
-                <span role="img" aria-label="camera"> 📸</span> Coder
+                <h2 className="mx-2 font-cursive">Felicia O'Garro</h2>
             </a>
+            <Nav />
         </header>
     );
 

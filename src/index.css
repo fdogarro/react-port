@@ -11,6 +11,9 @@ main {
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
+  --bluegreen:#088F8F;
+  --silversand:#bfc1c2;
+  --bluegray: #6F8FAF;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -34,7 +37,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: var(--silversand);
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
@@ -92,7 +95,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--bluegray);
 }
 
 header a {
@@ -109,6 +112,10 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
+}
+
+.font-cursive {
+  font-family: 'Poiret One', cursive !important;
 }
 
 button:hover {
