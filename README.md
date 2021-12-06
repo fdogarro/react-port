@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Port
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple react portfolio using Create React App and React Router.
 
 ## Available Scripts
 
