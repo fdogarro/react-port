@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return(
         <nav>
             <ul className="flex-row">
-            <li className="mx-2"><span>About</span></li>
-            <li className="mx-2"><span>Portfolio</span></li>
-            
-            <li className="mx-1"><span>Contact</span></li>
-            <li className="mx-1"><span>Resume</span></li>
+                <Link to="/"> <li className="mx-2">About me</li></Link>
+                <Link to="/portfolio"> <li className="mx-2">Portfolio</li></Link>
+                <Link to="/contact"> <li className="mx-2">Contact</li></Link>
+                <Link to="/resume"> <li className="mx-2">Resume</li></Link>
             </ul>
         </nav>
     );

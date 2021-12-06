@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -8,16 +9,21 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
+    <Router>
+      <React.Fragment>
       <Header />
       <main>
-        <About></About>
-        <Contact></Contact>
-        <Resume></Resume>
-        <Portfolio></Portfolio>
+        <Switch>
+          <Route exact path='/' component={About} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/resume' component={Resume} />
+        </Switch>
       </main>
       <Footer />
-    </div>
+      </React.Fragment>
+    </Router>
+    
   );
 };
 

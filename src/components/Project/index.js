@@ -3,43 +3,41 @@ import React from 'react';
 const Project = () => {
     const projects = [
         {
-            name: 'Grocery aisle',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Covid Tweets',
+            description: 'Lorem ipsum dolor sit amet, consectetur',
+            githubUrl:'https://github.com/fdogarro/nlp',
+            webUrl:'https://github.com/fdogarro/nlp'
           },
           {
-            name: 'Grocery booth',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Front End Challenges',
+            description: 'Lorem ipsum dolor sit amet, consectetur',
+            githubUrl:'https://github.com/fdogarro/front-end-challenge',
+            webUrl:'https://github.com/fdogarro/front-end-challenge'
           },
           {
-            name: 'Building exterior',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-          },
-          {
-            name: 'Restaurant table',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-          },
-          {
-            name: 'Cafe interior',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Vue Talk',
+            description: 'Lorem ipsum dolor sit amet, consectetur',
+            githubUrl:'https://github.com/fdogarro/vue-talk',
+            webUrl:'https://github.com/fdogarro/vue-talk'
           }
     ];
 
-    // const currentProjects = projects.filter((project) => project.category === category);
     return(
         <div>
             <div className="flex-row">
                 {projects.map((project, i) => (
-                <img
-                    src={require(`../../assets/project/${project.category}/${i}.jpg`).default}
-                    alt={project.name}
-                    className="img-thumbnail mx-1"
-                    key={project.name}
-                />
+                <div>
+                  <img
+                      src={require(`../../assets/project/photos/${i}.jpg`).default}
+                      alt={project.name}
+                      className="img-thumbnail mx-1"
+                      key={project.name}
+                  />
+                  <h5>{project.name}</h5>
+                  <p>{project.description}</p>
+                  <p>Github Url: {project.githubUrl}</p>
+                  <p>Website Url: {project.webUrl}</p>
+                  </div>
                 ))}
             </div>
         </div>

@@ -1,15 +1,15 @@
 import React from 'react';
+import coverImage from "../assets/cover/cover-image.jpg";
 
 const About = () => {
     return(
         <section>
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+            <h3>About me</h3>
+            <p>Software Engineer and Web Development Instructor with production experience 
+                building web and desktop applications for Fortune 500 companies and venture-backed startups.
+                In my spare time I enjoy playing chess, shooting photography, reading and learning new things.
+            </p>
+            <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
         </section>
     );
 

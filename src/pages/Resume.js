@@ -1,4 +1,5 @@
 import React from 'react';
+import resumeFile from "../assets/resume/FeliciaOGarro-cv.pdf";
 
 const Resume = () => {
     const skills = [
@@ -15,7 +16,7 @@ const Resume = () => {
     return(
         <section>
             <h1>Resume</h1>
-            <span>Download my <a href="link/to/your/download/file" download>resume</a></span>
+            <span>Download my <a href={resumeFile} download>resume</a></span>
             {skills.map((skill) => (
             <ul>
                 <li

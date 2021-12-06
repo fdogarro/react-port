@@ -76,6 +76,10 @@ const Contact = () => {
                </div>
             <button data-testid="submit" type="submit" onSubmit={handleSubmit}>Submit</button>
         </form>
+        <div>
+        <span>||</span> Connect with me on <a href="https://linkedin.com/in/feliciaogarro" target="_blank" rel="noopener noreferrer"><span>Linkedin</span></a>
+
+        </div>
     </section>
 
     );
