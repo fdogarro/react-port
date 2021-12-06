@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
 
 const Navigation = () => {
     return(
@@ -8,8 +7,8 @@ const Navigation = () => {
             <li className="mx-2"><span>About</span></li>
             <li className="mx-2"><span>Portfolio</span></li>
             
-            <li className="mx-2"><span>Contact</span></li>
-            <li className="mx-2"><span>Resume</span></li>
+            <li className="mx-1"><span>Contact</span></li>
+            <li className="mx-1"><span>Resume</span></li>
             </ul>
         </nav>
     );
